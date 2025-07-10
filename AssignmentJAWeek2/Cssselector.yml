@@ -1,0 +1,26 @@
+Identify the correct CSS selectors for the following elements:
+
+<input id="email" class="input-field" type="text" name="userEmail">
+
+ a) Select by ID 
+ await page.fill("#email","abc@gmail.com")
+
+ b) Select by Class 
+ await page.fill(".input-field","abc@gmail.com")
+
+ c) Select using attribute 
+ await page.fill("input[@type="text"]","abc@gmail.com")
+
+
+ Write a Playwright test to locate and click the "Submit" button using:
+ <button class="btn submit-btn" type="submit">Submit</button>
+a) CSS selector
+ await page.fill(".btn submit-btn".click()
+
+b) getByRole // playwright locator
+await page.getbyRole('button',{name:"submit"}).click()
+
+c) XPath
+await page.locator(//button[@type="Submit"]).click()
+
+
